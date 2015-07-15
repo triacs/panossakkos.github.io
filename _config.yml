@@ -26,6 +26,9 @@ background-img: "/img/intro-bg.jpg"
 me-img: "/img/me.jpg"
 
 # Blog variables
+paginate: 15
+
+paginate_path: "blog/page:num"
 
 post-preview-words: 128
 
@@ -72,6 +75,6 @@ social:
     url: "https://soundcloud.com/psakkos/"
 
 404-img: "/img/labtocat.png"
-    
+
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
