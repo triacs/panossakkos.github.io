@@ -26,6 +26,7 @@ background-img: "/img/intro-bg.jpg"
 me-img: "/img/me.jpg"
 
 # Blog variables
+
 paginate: 15
 
 paginate_path: "blog/page:num"
@@ -59,9 +60,11 @@ events:
     description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
 
 # First image of the Career timeline
+
 career-img: "/img/career/default.jpg"
 
 # Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+
 social:
   - title: "rss"
     url: "/feed.xml"
@@ -77,4 +80,5 @@ social:
 404-img: "/img/labtocat.png"
 
 # Exclusion list from the generated _site
+
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
