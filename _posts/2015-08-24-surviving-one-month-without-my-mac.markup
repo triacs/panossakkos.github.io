@@ -20,7 +20,9 @@ Adblock
 #OS
 
 * UX
-  * Minimal, blurred surfaces,
+  * Minimal, blurred surfaces
+  * Fluid scrolling
+  * Touchpad
   * Black theme
 * Terminal
   * Transparent
