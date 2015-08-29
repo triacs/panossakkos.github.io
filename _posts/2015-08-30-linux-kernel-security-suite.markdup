@@ -14,7 +14,7 @@ Let's see what a typical rootkit will do:
 
 1.  Hide files
 2.  Hide processes
-3.  Install malicious software (and nobody will notice because of 1 and 2 :) )
+3.  Install malicious software (and nobody will notice because of 1 and 2 😊 )
 4.  Steal certificates and passwords
 5.  Log all the activity of your machine
 
@@ -34,7 +34,7 @@ The suite includes the following (whitehat) rootkits:
 ## The Drip Dry Carbonite
 
 Protects the system call table.
-In case of an attempt of modifying the system call table, logs (remotely) a snapshot of the processes running in the system and freezes the machine.
+In case of an attempt of modifying it, snapshots of the processes running in the system are logged remotely and the machine gets frozen <small>(that's why it's called Carbonite)</small>.
 
 ## Dresden
 
