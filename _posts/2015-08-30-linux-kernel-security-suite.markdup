@@ -6,8 +6,8 @@ category: tech
 tags: [ 'linux', 'kernel', 'opensource' ]
 ---
 Rootkits.
-A word that gives white hats goosebumps and makes sys admins cry in their <a href="https://www.youtube.com/watch?v=QhBr0lPNuuU" target="_blank">shower</a>.
-In a nutshell, rootkits are binaries that are executed in the <a href="https://en.wikipedia.org/wiki/Protection_ring" target="_blank">Ring 0</a> of the OS, which practically means they are a God and your machine is their pet.
+A word that gives whitehats goosebumps and makes sys admins cry in their <a href="https://www.youtube.com/watch?v=QhBr0lPNuuU" target="_blank">shower</a>.
+In a nutshell, rootkits are binaries that are executed in the <a href="https://en.wikipedia.org/wiki/Protection_ring" target="_blank">kernel</a> of the OS, which practically means they are a God and your machine is their pet.
 Of course in order to add a rootkit in the kernel you need root permissions, but social engineering and 0-days make this two or three pieces of cake.
 
 Let's see what a typical rootkit will do:
@@ -19,29 +19,29 @@ Let's see what a typical rootkit will do:
 5.  Log all the activity of your machine
 
 
-All of the above are realized by altering the system call table. Scary stuff, right?
+All of the above are realized by altering the system call table.
+Scary stuff, right?
 There are ways to protect yourself from them, but of course it's a mouse and cat game that never ends.
 
-A few years ago my job was to protect linux machines from rootkits and later I kept digging deeper as a hobby, and it's about time to open source this work.
+A few years ago my job was to protect linux servers from rootkits and later I kept digging deeper as a hobby, and it's about time to open source this work.
 
 The suite includes the following (whitehat) rootkits:
 
 ## The Drip Dry Carbonite
 
 Protects the system call table.
-In case of an attempt of modifying the system call table, logs (remotely) a snapshot of the processes running in the system and freeze the machine.
+In case of an attempt of modifying the system call table, logs (remotely) a snapshot of the processes running in the system and freezes the machine.
 
 ## Dresden
 
-Blocks all the attempts to insert rootkits in the kernel.
-In case of an attempt to insert a rootkit, apart from blocking the incoming rootkit, dumps its instruction memory and logs a critical message.
+Blocks all the attempts to insert rootkits in the kernel, dumps their instruction memory and logs a critical message.
 
 ## Netlog
 
 Logs all network communication by probing the inet stack of the kernel.
 
 In the future I will post about some interesting snippets of the source code.
-The repo lives <a href="https://github.com/PanosSakkos/linux-kernel-security-suite" target="_blank">here</a>, don't forget to star :)
+The repo lives <a href="https://github.com/PanosSakkos/linux-kernel-security-suite" target="_blank">here</a> and don't forget to star:
 
 <iframe src="https://ghbtns.com/github-btn.html?user=panossakkos&repo=linux-kernel-security-suite&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 
