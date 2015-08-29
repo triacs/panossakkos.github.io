@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: "{ Personal } Jekyll Theme"
 category: tech
-tags: [ 'jekyll' ]
+tags: [ 'jekyll', 'opensource' ]
 ---
 As I <a href="http://panossakkos.github.io/tech/2015/06/27/blogging-like-a-hacker.html" target="_blank">wrote</a> before,
 I wanted to open-source the current theme because I believe that it adds value to the existing Jekyll themes.

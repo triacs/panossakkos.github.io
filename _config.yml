@@ -6,7 +6,7 @@ description: "Blog of Panos Sakkos, blogging mainly about tech. Opinions express
 keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft, Office Graph, Machine Learning, Databases, jekyll"
 favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
-google-tracking-id: "UA-35880426-3"
+google-tracking-id: False #"UA-35880426-3"
 disqus-shortname: "panossakkos"
 
 # Navigation bar links

@@ -1,38 +1,48 @@
 ---
 layout: post
 section-type: post
-title: "Ad Hell"
+title: "Linux Kernel Security Suite"
 category: tech
 tags: [ 'linux', 'kernel', 'opensource' ]
 ---
 Rootkits.
-A word that gives whitehats goosebumps and makes sys admins cry in their <a href="https://www.youtube.com/watch?v=QhBr0lPNuuU" target="_blank">shower</a>.
+A word that gives white hats goosebumps and makes sys admins cry in their <a href="https://www.youtube.com/watch?v=QhBr0lPNuuU" target="_blank">shower</a>.
 In a nutshell, rootkits are binaries that are executed in the <a href="https://en.wikipedia.org/wiki/Protection_ring" target="_blank">Ring 0</a> of the OS, which practically means they are a God and your machine is their pet.
-Of course in order to add a rootkit in the kernel you need root permission, but social engineering and 0-days make this two or three pieces of cake.
+Of course in order to add a rootkit in the kernel you need root permissions, but social engineering and 0-days make this two or three pieces of cake.
 
-Let's what a typical rootkit will do:
-1) Hide files
-2) Hide processes
-3) Install malicious software (and nobody will notice because of 1 and 2 :) )
-4) Steal certificates and passwords
-5) Log all the activity of your machine (and again, nobody will notice)
+Let's see what a typical rootkit will do:
 
-Scary enough? It is, and they exist since the beginning of the Operating Systems.
+1.  Hide files
+2.  Hide processes
+3.  Install malicious software (and nobody will notice because of 1 and 2 :) )
+4.  Steal certificates and passwords
+5.  Log all the activity of your machine
+
+
+All of the above are realized by altering the system call table. Scary stuff, right?
 There are ways to protect yourself from them, but of course it's a mouse and cat game that never ends.
 
-A few years ago my job was to protect linux machines from rootkits and later I kept digging as a hobby.
-It's about time to open source this work and help whitehats and blackhats keep playing their game.
+A few years ago my job was to protect linux machines from rootkits and later I kept digging deeper as a hobby, and it's about time to open source this work.
 
-The repo lives <a href="https://github.com/PanosSakkos/linux-kernel-security-suite" target="_blank">here</a> and consists of the following:
+The suite includes the following (whitehat) rootkits:
 
 ## The Drip Dry Carbonite
 
-Protects the system call table, by monitoring it. In case of an attempt of modifying the system call table, it will log (remotely) a snapshot of the processes running in the system and freeze the machine.
+Protects the system call table.
+In case of an attempt of modifying the system call table, logs (remotely) a snapshot of the processes running in the system and freeze the machine.
 
 ## Dresden
 
-blocks all the attempts to insert modules in the kernel. In case of attempting to isnert a module, appart from blocking it, it will dump its instruction memory and log a warning message.
+Blocks all the attempts to insert rootkits in the kernel.
+In case of an attempt to insert a rootkit, apart from blocking the incoming rootkit, dumps its instruction memory and logs a critical message.
 
 ## Netlog
 
 Logs all network communication by probing the inet stack of the kernel.
+
+In the future I will post about some interesting snippets of the source code.
+The repo lives <a href="https://github.com/PanosSakkos/linux-kernel-security-suite" target="_blank">here</a>, don't forget to star :)
+
+<iframe src="https://ghbtns.com/github-btn.html?user=panossakkos&repo=linux-kernel-security-suite&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+<br><br>
