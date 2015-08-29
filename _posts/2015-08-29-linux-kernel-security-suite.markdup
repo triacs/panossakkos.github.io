@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: "Linux Kernel Security Suite"
+title: Linux Kernel Security Suite
 category: tech
 tags: [ 'linux', 'kernel', 'opensource' ]
 ---
@@ -12,12 +12,13 @@ Of course in order to add a rootkit in the kernel you need root permissions, but
 
 Let's see what a typical rootkit will do:
 
-1.  Hide files
-2.  Hide processes
-3.  Install malicious software (and nobody will notice because of 1 and 2 😊 )
-4.  Steal certificates and passwords
-5.  Log all the activity of your machine
-
+<ol class="personal-list">
+<li>Hide files</li>
+<li>Hide processes</li>
+<li>Install malicious software (and nobody will notice because of 1 and 2 😊 )</li>
+<li>Steal certificates and passwords</li>
+<li>Log all the activity of your machine</li>
+</ol>
 
 All of the above are realized by altering the system call table.
 Scary stuff, right?

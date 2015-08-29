@@ -41,13 +41,15 @@ We didn't keep this safety net during the whole process, it was happening organi
 
 Summarizing,
 
- - Being organized is useful and it will probably prevent a few bugs.
- - Even if you have the perfect spec, you will introduce bugs.
- - The more careful you are, the less bugs you will introduce and the more tired you are, the less careful you become.
- - The bugs will show up during integration.
- - When something fails, we will fix it.
- - It's not the end of the world, it just takes time and it hurts your motivation.
- - And finally, you need a team, for having fun during the creative process, for agility and as a safety net to each other.
+<ul class="personal-list">
+ <li>Being organized is useful and it will probably prevent a few bugs.</li>
+ <li>Even if you have the perfect spec, you will introduce bugs.</li>
+ <li>The more careful you are, the less bugs you will introduce and the more tired you are, the less careful you become.</li>
+ <li>The bugs will show up during integration.</li>
+ <li>When something fails, we will fix it.</li>
+ <li>It's not the end of the world, it just takes time and it hurts your motivation.</li>
+<li>And finally, you need a team, for having fun during the creative process, for agility and as a safety net to each other.</li>
+</ul>
 
 ###Photos
 
