@@ -1,6 +1,7 @@
 # Site settings
 
 url: "http://panossakkos.github.io"
+lang: "en"
 title: "{ Panos Sakkos }"
 description: "Blog of Panos Sakkos, blogging mainly about tech. Opinions expressed are mine."
 keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft, Office Graph, Machine Learning, Databases, jekyll"
@@ -80,6 +81,10 @@ social:
     url: "https://youtube.com/c/PanosSakkos"
 
 404-img: "/img/labtocat.png"
+
+# Enable minification SASS
+sass:  
+  style: compressed
 
 # Exclusion list from the generated _site
 
