@@ -16,3 +16,5 @@ So, I needed one pin, and instead of rushing into buying a bigger board, I found
 <script src="https://gist.github.com/PanosSakkos/7766479.js"></script>
 
 Very straightforward, and I don't see any caveats so far 😊.
+
+P.S: Mads found <a href="http://www.atmel.com/webdoc/AVRLibcReferenceManual/FAQ_1faq_softreset.html" target="_blank">this</a>, so test it in case you are using an old AVR 
