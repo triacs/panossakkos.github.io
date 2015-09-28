@@ -19,4 +19,4 @@ Very straightforward, and I don't see any caveats so far 😊.
 
 Also, like it was pointed out on reddit, you can do cool stuff like resetting remotely your board!
 
-P.S: Mads found <a href="http://www.atmel.com/webdoc/AVRLibcReferenceManual/FAQ_1faq_softreset.html" target="_blank">this</a>, so test it in case you are using an old AVR 
+P.S: Mads found <a href="http://www.atmel.com/webdoc/AVRLibcReferenceManual/FAQ_1faq_softreset.html" target="_blank">this</a>, so test it in case you are using an new AVR 
