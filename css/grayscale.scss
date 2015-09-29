@@ -1,8 +1,6 @@
 ---
 ---
 
-/* YAML block in order to get processed by Jekyll */
-
 @import "variables";
 @import "mixins";
 
@@ -64,6 +62,15 @@ a {
     }
 }
 
+ol,
+ul {
+  text-align: center;
+  margin: 0 0 35px;
+  font-size: 20px;
+  line-height: 1.5;
+  list-style-position: inside;
+}
+
 .light {
     font-weight: 400;
 }
@@ -75,7 +82,6 @@ a {
   line-height: 1.5;
   list-style-position: inside;
 }
-
 
 .navbar-custom {
     margin-bottom: 0;
@@ -354,7 +360,7 @@ ul.social-buttons li a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
-    
+
     &:hover,
     &:focus,
     &:active {
