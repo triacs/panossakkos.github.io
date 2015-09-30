@@ -1,46 +1,45 @@
+
 # Site settings
 
-author: "Panos Sakkos"
-email: "panoss@microsoft.com"
 url: "http://panossakkos.github.io"
+baseurl: ""
+google-tracking-id: "UA-35880426-3"
+
+#############
+# HTML Head #
+#############
+
+author: "Panos Sakkos"
 lang: "en"
 title: "{ Panos Sakkos }"
+favicon: "/img/favicon.ico"
 description: "Blog of Panos Sakkos, blogging mainly about tech. Opinions expressed are mine."
 keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft, Office Graph, Machine Learning, Databases, jekyll"
-favicon: "/img/favicon.ico"
+
+################
+# Intro layout #
+################
+
 black-favicon: "/img/black-lab-glass.ico"
-google-tracking-id: "UA-35880426-3"
-disqus-shortname: "panossakkos"
-
-# Navigation bar links
-# Blog link in the blog and post pages will point to the blog.html#blog
-# In the default page it will point to the preview of the last post
-
-pages_list:
-  About: 'about'
-  Blog: 'blog'
-  Career: 'career'
-  Contact: 'contact'
-
-background-img: "/img/intro-bg.jpg"
-
-# About variables
-
+background-img: "../img/intro-bg.jpg"
 me-img: "/img/me.jpg"
 
-# Blog variables
-
-paginate: 15
-
-paginate_path: "blog/page:num"
+########
+# Blog #
+########
 
 post-preview-words: 128
+
+paginate: 5
 
 fb-share: True
 twitter-share: True
 reddit-share: True
+disqus-shortname: "panossakkos"
 
-# Career variables
+###############
+# Life Events #
+###############
 
 events:
   - image: "/img/career/microsoft.jpg"
@@ -63,10 +62,17 @@ events:
     description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
 
 # First image of the Career timeline
+career-img: "/img/career/default.png"
 
-career-img: "/img/career/default.jpg"
+##################
+# Contact layout #
+##################
 
-# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+email: "panoss@microsoft.com"
+
+##################
+# Social Buttons #
+##################
 
 social:
   - title: "github"
@@ -78,12 +84,32 @@ social:
   - title: "rss"
     url: "/feed.xml"
 
+############
+# 404 page #
+############
+
 404-img: "/img/labtocat.png"
 
+################################################################################
+
+# Tread carefully if you want to change the variables bellow this point!
+
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
+
+pages_list:
+  About: 'about'
+  Blog: 'blog'
+  Career: 'career'
+  Contact: 'contact'
+
+# Pagination path
+paginate_path: "blog/page:num"
+
 # Enable minification SASS
-sass:  
+sass:
   style: compressed
 
 # Exclusion list from the generated _site
-
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
