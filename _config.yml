@@ -62,7 +62,7 @@ events:
     description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
 
 # First image of the Career timeline
-career-img: "/img/career/default.png"
+career-img: "/img/career/default.jpg"
 
 ##################
 # Contact layout #
