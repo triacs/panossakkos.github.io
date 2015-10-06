@@ -24,6 +24,20 @@ black-favicon: "/img/black-lab-glass.ico"
 background-img: "../img/intro-bg.jpg"
 me-img: "/img/me.jpg"
 
+##############################
+# Dynamic Text on the header #
+##############################
+
+dynamic-typing: True
+shuffle: Flase	# Shuffle the lines.
+loop: False
+loop-count:	1 # Set False for infinite loop, or set any number for finite loop.
+type-speed:	10		# Default 10
+start-delay: 200	# Default 200
+delete-delay: 50000	# Default 5000
+lines:			# You can add HTML Tags in the Text
+  - text: "Why so serious?"
+
 ########
 # Blog #
 ########
