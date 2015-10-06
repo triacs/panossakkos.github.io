@@ -1,0 +1,19 @@
+#!/usr/bin/ruby
+
+require 'fileutils'
+
+personal = ARGV[0]
+
+repoDirectories = [ '_includes', '_layouts', '_sass', 'blog', 'css', 'js' ]
+
+# Delete local resources of { Personal }
+repoDirectories.each{ |directory| FileUtils.rm_rf('../' + directory) }
+puts '[+] Deleted local { Personal } resources'
+
+# Create the { Personal } directories again
+repoDirectories.each{ |directory| FileUtils.mkdir('../' + directory) }
+puts '[+] Created empty directory resources'
+
+# Copy the latest { Personal } directory contents over this repo
+repoDirectories.each{ |directory| FileUtils.cp_r('../' + personal + '/' + directory + '/.', '../' + directory) }
+puts '[+] Copied resources from ' + personal + ' to directory resources'
