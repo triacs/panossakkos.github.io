@@ -2,8 +2,8 @@
 
 require 'yaml'
 
-POSTS_DIR = '../_posts/'
-TAGS_DIR = '../tags/'
+POSTS_DIR = '_posts/'
+TAGS_DIR = 'tags/'
 
 Dir.foreach(POSTS_DIR) do |post|
 
