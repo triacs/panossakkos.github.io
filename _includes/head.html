@@ -36,6 +36,12 @@
   {% if site.favicon %}
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{ site.favicon }}">
   {% endif %}
+  {% if site.force-https %}
+    <script>
+    if (window.location.protocol != "https:")
+        window.location.protocol = "https";
+    </script>
+  {% endif %}
 </head>
 
 <!-- HEAD End -->
