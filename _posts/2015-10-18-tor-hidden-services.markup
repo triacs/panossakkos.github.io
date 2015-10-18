@@ -1,0 +1,43 @@
+---
+layout: post
+section-type: post
+title: Creating a Tor Hidden Service
+category: tech
+tags: [ 'tor', 'cypherpunk' ]
+---
+
+Let's talk about Tor!
+I will not spend any words why Tor is changing and saving lives, because there
+are already so many stories <a href="https://www.torproject.org/about/torusers.html.en" target="_blank">reported</a>
+about this.
+
+I will just say that Tor is a tool, just like a screwdriver is a tool.
+And screwdrivers can be used for screwing screws, but also for hurting people.
+Would you ban screwdrivers?
+
+Moving on, you can evaluate how difficult is to trace your
+<a href="https://www.torproject.org/docs/hidden-services.html.en" target="_blank">tor hidden service</a>,
+by thinking about who are you going to disrupt. If you get the attention of NSA,
+they might trace you even if you did
+<a href="https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html" target="_blank">zero</a>
+human errors. Governments might trace you as well, depending on the government.
+And don't forget that so far almost all the reported tracebacks in Tor were successful due to
+<a href="https://www.youtube.com/watch?v=7G1LjQSYM5Q" target="_blank">human errors</a>
+disclosing personal information.
+
+A Tor hidden service is any web service, accessible from within Tor.
+So any tricks that you know already about the web, they apply for the tor hidden services,
+you just replace the service url with the onion address.
+
+First of all, you will need <a href="https://www.torproject.org/docs/installguide.html.en" target="_blank">Tor</a>.
+Then you have to declare your service's path and listening port in the torrc configuration file:
+
+<pre style="text-align: left">
+HiddenServiceDir /home/username/hidden-service/
+HiddenServicePort 80 127.0.0.1:4000
+</pre>
+
+Then you just have to restart the tor service and you will find your service's onion
+address in the HiddenServiceDir directory.
+
+Fire up your Tor browser, paste the onion address and you are live!
