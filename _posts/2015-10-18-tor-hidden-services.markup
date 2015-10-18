@@ -42,4 +42,4 @@ address in the HiddenServiceDir directory.
 
 Fire up your Tor browser, paste the onion address and you are live!
 
-P.S.: Don't forget to use your hidden service over https (https://<public key>.onion), in order for the traffic to be encrypted from the Tor exit node.
+P.S.: Don't forget to use your hidden service over https (https://service-public-key.onion), in order for the traffic to be encrypted from the Tor exit node.
