@@ -4,7 +4,7 @@
 url: "https://panossakkos.github.io"
 baseurl: ""
 google-tracking-id: "UA-35880426-3"
-force-https: False
+force-https: True
 
 #############
 # HTML Head #
