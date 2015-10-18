@@ -37,7 +37,7 @@ HiddenServiceDir /home/username/hidden-service/
 HiddenServicePort 80 127.0.0.1:4000
 </pre>
 
-Then you just have to restart the tor service and you will find your service's onion
+Restart the tor service and you will find your service's onion
 address in the HiddenServiceDir directory.
 
 Fire up your Tor browser, paste the onion address and you are live!
