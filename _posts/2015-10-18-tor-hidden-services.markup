@@ -23,7 +23,7 @@ they might trace you even if you did
 human errors. Governments might trace you as well, depending on the government.
 And don't forget that so far almost all the reported tracebacks in Tor were successful due to
 <a href="https://www.youtube.com/watch?v=7G1LjQSYM5Q" target="_blank">human errors</a>
-disclosing personal information.
+disclosing personal identifiable information.
 
 A Tor hidden service is any web service, accessible from within Tor.
 So any tricks that you know already about the web, they apply for the tor hidden services,
