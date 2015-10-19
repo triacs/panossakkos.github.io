@@ -32,7 +32,8 @@ Restart the tor service and you will find your service's onion address (public k
 
 <small>Note the obvious, that if someone gets his hands on your private key, then he becomes you, your hidden service.</small>
 
-Fire up your Tor browser, paste the onion address and you are live!
+Fire up a <a href="https://www.torproject.org/projects/torbrowser.html.en" target="_blank">
+Tor browser</a>, paste the onion address and you are live!
 
 The only thing you should be worried except from <a href="https://www.youtube.com/watch?v=7G1LjQSYM5Q" target="_blank">giving away</a>
  your Personal Identifiable Information due to human error, is that the speculations about NSA decrypting TLS were
