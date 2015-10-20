@@ -20,7 +20,7 @@ Note that *HTTPS Everywhere* comes pre-installed and pre-enabled with the
 
 How can you contribute?
 
-When you are browsing with *HTTPS Everywhere* enabled and you see a website that is not on https, try to access it with https. If the website is still functional, then you can very easily add a rule for it. Fork the github
+While browsing with *HTTPS Everywhere* enabled, if you see a website that is not on https, try to access it with https. If the website is still functional, then you can very easily add a rule for it. Fork the Github
 <a href="https://github.com/EFForg/https-everywhere" target="_blank"> repo</a> and
 
 <pre style="text-align: left">
