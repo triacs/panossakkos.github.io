@@ -40,3 +40,5 @@ The only thing you should be worried except from <a href="https://www.youtube.co
 <a href="https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html" target="_blank">true</a>.
 
 P.S.: Don't forget to use your hidden service over https (https://service-public-key.onion), in order for the traffic to be encrypted from the Tor exit node.
+
+P.P.S.: First time that you will access the service it will take a few minutes to respond
