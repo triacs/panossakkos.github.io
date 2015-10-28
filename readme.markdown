@@ -4,7 +4,8 @@
 
 Website and Blog of [Panos Sakkos](http://panossakkos.github.io), built with [jekyll](jekyllrb.com)
 
-Theme: [Personal Jekyll Theme](https://github.com/PanosSakkos/personal-jekyll-theme)
+Don't fork this repo! 
+Fork [Personal Jekyll Theme](https://github.com/PanosSakkos/personal-jekyll-theme) in order to get support :wink:
 
 ## License
 
