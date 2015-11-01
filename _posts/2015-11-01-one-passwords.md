@@ -37,7 +37,7 @@ The javascript code to do that was less than 20 lines of code
 
 <script src="https://gist.github.com/PanosSakkos/363e2fbc98e0fd4eafd3.js"></script>
 
-I started using it and I realized that I had created a password manager without actually storing any data(!). Also the blockchain cannot be altered, when a block is checkpointed, it's checkpointed for an eternity, thanks to the nodes of the Bitcoin network.
+I started using it and I realized that I had created a password manager without actually storing any data(!). Also the Block chain cannot be altered, when a block is checkpointed, it's checkpointed for an eternity, thanks to the nodes of the Bitcoin network.
 
 Results *for_an_1m4Gin4ry* secret passphrase
 
