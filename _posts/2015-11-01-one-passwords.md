@@ -15,7 +15,7 @@ source of cyber incidents. Ideally we should have one unique password per servic
 which doesn't contain words, is consisted by letters (both capital and non-capital), numbers and symbols <small>etc etc</small>. And, last but not least, we have to change these passwords every (i.e.) 3 months in order to be safe.
 
 One of my constant headaches is that I don't follow all of these rules and lately this pain
-has grown lately. I decided to updated all my passwords (and keep updating them every a couple of months) in order to be compliant with all the security suggestions.
+has grown. I decided to updated all my passwords (and keep updating them every a couple of months) in order to be compliant with all the security suggestions.
 For example I didn't have a unique password per service. Instead I had about 10 strong
 passwords and I was assigning them to newly subscribed services, according to how
 much I didn't want my account of this service to be hacked. For example, I was assigning my
