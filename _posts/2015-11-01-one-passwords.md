@@ -29,9 +29,9 @@ so it's actually a very strong password and whenever I decide that I want to cha
 
 I created a <a href="https://panossakkos.github.io/one-passwords/" target="_blank">web app</a> that was using the following's block hash as the password
 
-````
+<pre style="text-align: left">
 SHA256(secretPassphrase + serviceName) % 381323
-````
+</pre>
 
 The javascript code to do that was less than 20 lines of code
 
