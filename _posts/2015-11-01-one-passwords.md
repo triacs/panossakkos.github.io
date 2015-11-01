@@ -22,7 +22,7 @@ much I didn't want my account of this service to be hacked. For example, I was a
 less strong password to the services that I didn't care at all about being hacked.
 
 I gave it some thought and I came up with the following system. I create a very strong password and every time that I want to create an account for service X, then I combine
-these two pieces in order to point to block of <a href="https://en.wikipedia.org/wiki/Bitcoin" target="_blank">Bitcoin's</a> <a href="https://en.wikipedia.org/wiki/Block_chain_(database)" target="_blank">Block chain</a>. From this block, I extract its hash and *voila!* I have my password for service X.
+these two pieces in order to point to a block of <a href="https://en.wikipedia.org/wiki/Bitcoin" target="_blank">Bitcoin's</a> <a href="https://en.wikipedia.org/wiki/Block_chain_(database)" target="_blank">Block chain</a>. From this block, I extract its hash and *voila!* I have my password for service X.
 
 Bitcoin's block hashes are <a href="https://xkcd.com/936/" target="_blank">64 characters long</a> and their first characters are 0s, depending on which generation they were checkpointed. The way you can combine the secret passphrase with the service's name, is by computing their hash (i.e. SHA256) and then assigning this hash to a block by performing the modulo of a recent prime block of the (always ordered) Block chain. Yesterday the highest prime block of the Block chain was 381323. Like this, you get a huge password, with letters (not a combination of capital and non-capital letters) and numbers,
 so it's actually a very strong password and whenever I decide that I want to change my passwords, all I have to do is to change my secret passphrase.
