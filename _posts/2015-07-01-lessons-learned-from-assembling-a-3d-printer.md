@@ -52,24 +52,24 @@ Summarizing,
 
 ###Photos
 
-<img class="img-responsive" src="/img/posts/printer/misc.jpg" alt="parts">
+<img src="/img/posts/printer/misc.jpg" alt="parts">
 
-<img class="img-responsive" src="/img/posts/printer/session-1-0.jpg" alt="">
+<img src="/img/posts/printer/session-1-0.jpg" alt="">
 
-<img class="img-responsive" src="/img/posts/printer/session-1-1.jpg" alt="">
+<img src="/img/posts/printer/session-1-1.jpg" alt="">
 
-<img class="img-responsive" src="/img/posts/printer/first-bug.jpg" alt="Fixing the first bug">
+<img src="/img/posts/printer/first-bug.jpg" alt="Fixing the first bug">
 
-<img class="img-responsive" src="/img/posts/printer/board-fix.jpg" alt="Board fix">
+<img src="/img/posts/printer/board-fix.jpg" alt="Board fix">
 
-<img class="img-responsive" src="/img/posts/printer/board.jpg" alt="control board">
+<img src="/img/posts/printer/board.jpg" alt="control board">
 
-<img class="img-responsive" src="/img/posts/printer/session-1-2.jpg" alt="">
+<img src="/img/posts/printer/session-1-2.jpg" alt="">
 
-<img class="img-responsive" src="/img/posts/printer/session-1-3.jpg" alt="">
+<img src="/img/posts/printer/session-1-3.jpg" alt="">
 
-<img class="img-responsive" src="/img/posts/printer/session-1-4.jpg" alt="">
+<img src="/img/posts/printer/session-1-4.jpg" alt="">
 
-<img class="img-responsive" src="/img/posts/printer/session-1-complete.jpg" alt="complete">
+<img src="/img/posts/printer/session-1-complete.jpg" alt="complete">
 
-<img class="img-responsive" src="/img/posts/printer/print.jpg" alt="first print">
+<img src="/img/posts/printer/print.jpg" alt="first print">
