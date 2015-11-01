@@ -8,7 +8,7 @@ tags: [ 'opensource', 'cypherpunk', 'bitcoin' ]
 <small>*Longer than usual post is following*</small>
 
 Passwords rule the world. In order to fully understand the power of passwords, imagine
-a person who could guess all the passwords that exist. Wouldn't that person ruling the world? 😉
+a person who could guess all the passwords that exist. Wouldn't that person be ruling the world? 😉
 
 Unfortunately passwords are really hard to handle and this is one of the most common
 source of cyber incidents. Ideally we should have one unique password per service,
