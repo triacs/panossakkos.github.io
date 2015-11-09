@@ -50,6 +50,8 @@ paginate: 5
 fb-share: True
 twitter-share: True
 reddit-share: True
+linkedin-share: False
+google-plus-share: False
 disqus-shortname: "panossakkos"
 
 ###############
@@ -96,6 +98,8 @@ social:
     url: "https://no.linkedin.com/in/PanosSakkos"
   - title: "twitter"
     url: "https://twitter.com/thepanoss"
+  - title: "bitcoin"
+    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
   - title: "rss"
     url: "/feed.xml"
 
