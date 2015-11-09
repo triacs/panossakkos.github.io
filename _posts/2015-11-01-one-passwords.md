@@ -26,7 +26,7 @@ I gave it some thought and I came up with the following system. I create a very 
 Bitcoin's block hashes are <a href="https://xkcd.com/936/" target="_blank">64 characters long</a> and their first characters are 0s, depending on which generation they were checkpointed. The way you can combine the secret passphrase with the service's name, is by computing their hash (i.e. SHA256) and then assigning this hash to a block by computing the modulo of a recent prime block of the (always ordered) Block chain. Yesterday the highest prime block of the Block chain was 381323. Like this, you get a huge password, with letters (not a combination of capital and non-capital letters) and numbers,
 so it's actually a very strong password and whenever I decide that I want to change my passwords, all I have to do is to change my secret passphrase.
 
-I created a <a href="https://panossakkos.github.io/one-passwords/" target="_blank">proof of concept web app</a> that was using the following, in order to point to a block
+I created a proof of concept web app that was using the following, in order to point to a block
 
 <pre style="text-align: left">
 SHA256(secretPassphrase + serviceName) % 381323
