@@ -6,7 +6,7 @@ require 'fileutils'
 
 personal = ARGV[0]
 
-repoDirectories = [ '_includes', '_layouts', '_sass', 'blog', 'css', 'js' ]
+repoDirectories = [ '_includes', '_layouts', 'blog', 'css' ]
 repoFiles = [ 'feed.xml' ]
 
 # Delete local resources of { Personal }
