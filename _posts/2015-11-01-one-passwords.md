@@ -5,8 +5,6 @@ title: One password to rule them all?
 category: tech
 tags: [ 'opensource', 'cypherpunk', 'bitcoin' ]
 ---
-<small>*Longer than usual post is following*</small>
-
 Passwords rule the world. In order to fully understand the power of passwords, imagine
 a person who could guess all the passwords that exist. Wouldn't that person be ruling the world? 😉
 

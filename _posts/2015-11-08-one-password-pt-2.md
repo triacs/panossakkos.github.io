@@ -5,9 +5,6 @@ title: One passwords
 category: tech
 tags: [ 'opensource', 'cypherpunk', 'bitcoin' ]
 ---
-
-<small>*Longer than usual post is following*</small>
-
 This is the second <a href="https://panossakkos.github.io/tech/2015/11/01/one-passwords.html"
 target="blank">iteration</a> of creating a stateless password manager.
 The stateless property is valuable because it eliminates the need to install software, or create accounts.
