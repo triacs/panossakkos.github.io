@@ -34,7 +34,7 @@ Of course my stolen password is not reused anywhere, thanks to the use of the se
 However the service tag must be considered common knowledge, which means that the attacker
 (let's assume that he knows how I compute my passwords) will brute force the passphrase
 and if my passphrase is weak, he will find it in reasonable time.
-Let's see if we can fix that by adding in the computation what all the service
+Let's see if we can mitigate that by adding in the computation what all the service
 providers should be doing in their systems in order to protect my password.
 
 The common and effective approach against the <a
