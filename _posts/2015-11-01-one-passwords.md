@@ -52,4 +52,4 @@ Service Tag:  github
 Password:  c4f8bc9fb5aea9d8d323d4e97b30e853a0ce531696527f75be72a7de66be4c9f
 </pre>
 
-P.S: There is a follow up [post](https://panossakkos.github.io/tech/2015/11/09/one-passwords-pt-2.html) on this
+P.S: There is a follow up [post](https://panossakkos.github.io/tech/2015/11/08/one-password-pt-2.html) on this
