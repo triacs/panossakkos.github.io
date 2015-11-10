@@ -5,7 +5,7 @@ title: Assembling a 3D Printer
 category: tech
 tags: [ 'software', 'hardware' ]
 ---
-A few weeks ago the Garage team of my office got a little present, a<strike>n IKEA</strike> <a href="https://www.vertex3dprinter.eu/" target="_blank">DIY 3D printer</a>.
+A few weeks ago the Garage team of my office got a little present, a<strike>n IKEA</strike> <a href="https://www.vertex3dprinter.eu/" target="blank">DIY 3D printer</a>.
 It was zillions of bolts, nuts, wires, motors, rods and tiny plastic pieces which I couldn't imagine that they could assemble a 3D printer.
 I panicked, believing that we will miss a piece and everything will collapse in front of us.
 Whenever I have dealt with hardware so far, I was always frightened.
@@ -34,7 +34,7 @@ The result of this?
 We spent 45 minutes of unscrewing and screwing more than 60 bolts and nuts.
 We made 5 more mistakes, which most of them happened because we were tired (the first session lasted 12.5 hours, following a full working day).
 Every one of them cost us time (in the order of half-hours) but also mentally, because we had to take several steps back in order to make one correct step forward.
-For the later cost, the most expensive mistake was when just before the end, we realized that 4 nuts were missing from the <a href="https://manuals.velleman.eu/article.php?id=17" target="_blank">belt clamps</a>.
+For the later cost, the most expensive mistake was when just before the end, we realized that 4 nuts were missing from the <a href="https://manuals.velleman.eu/article.php?id=17" target="blank">belt clamps</a>.
 In this case we had to unmount the whole printer head in order to fix them  and this process took us one more session of 3 hours.
 One good habit which prevented us from introducing more bugs was that we <strike>code</strike> hardware-reviewed each other.
 We didn't keep this safety net during the whole process, it was happening organically when we were taking breaks.
