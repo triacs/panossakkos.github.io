@@ -30,10 +30,9 @@ as plaintext and by gating the login attempts. This ideal world is not even clos
 what is happening today and my password computation technique is as weak as the less secure
 service that I use it against. Because the less secure service that I'm using
 will be attacked and the attacker will get his hands on my plain text password.
-Of course my stolen password is not reused anywhere, thanks to the use of the service tag,
-but given that the service tag must be considered common knowledge,
-then the attacker will brute force the passphrase and manage to find the passphrase,
-depending on how weak the passphrase is.
+Of course my stolen password is not reused anywhere, thanks to the use of the service tag.
+However the service tag must be considered common knowledge, which means that the attacker
+will brute force the passphrase and manage to find the passphrase, depending on how weak the passphrase is.
 Let's see if we can fix that by adding in the computation what all the service
 providers should be doing in their systems in order to protect my password.
 
