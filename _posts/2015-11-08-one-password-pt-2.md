@@ -20,8 +20,6 @@ The mapped block's hash was hashed and the digest was the password.
 I quickly realized that there was no reason to use the Block
 chain. You can simply hash the two inputs.
 
-So, this is what we have right now
-
 <pre style="text-align: left">
 password = hash(passphrase + serviceTag)
 </pre>
