@@ -17,7 +17,7 @@ code that it's being executed on their machine.
 The first iteration was using a combination of a passphrase and a service tag
 as user's input. These two were hashed and mapped to a block of Bitcoin's Block chain.
 The mapped block's hash was hashed and the digest was the password.
-Next morning, as soon as I woke up, I realized that there was no reason to use the Block
+I quickly realized that there was no reason to use the Block
 chain. You can simply hash the two inputs.
 
 So, this is what we have right now
