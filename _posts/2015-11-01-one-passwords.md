@@ -24,8 +24,10 @@ less strong password to the services that I didn't care at all about being hacke
 I gave it some thought and I came up with the following system. I create a very strong password (let's call it passphrase) and every time that I want to create an account for service X, then by combining my passphrase and the service's name (let's call it service tag), X in this case, I can point to a block of <a href="https://en.wikipedia.org/wiki/Bitcoin" target="blank">Bitcoin's</a> <a href="https://en.wikipedia.org/wiki/Block_chain_(database)" target="blank">Block chain</a>. From this block, I can extract its hash,
  hash it and *voila!*, I got my password.
 
-The way you can combine the secret passphrase with the service's name, is by hashing them with a cryptographic hash and then assigning this hash to a block by computing the modulo of a recent prime block of the (always ordered) Block chain. Yesterday the highest prime block of the Block chain was 381323.
-Like this, you get a huge password, with letters (not a combination of capital and non-capital letters) and numbers,
+The way you can combine the secret passphrase with the service's tag, is by hashing
+them and then assigning the digest to a block by computing the modulo of a recent
+prime block of the (always ordered) Block chain. Yesterday the highest prime block of the Block chain was 381323.
+Like this, you get a huge password, with letters and numbers,
 so it's actually a very <a href="https://xkcd.com/936/" target="blank">strong</a> password and whenever I decide that I want to change my passwords, all I have to do is to change my secret passphrase.
 
 I created a proof of concept web app that was using the following, in order to point to a block:
