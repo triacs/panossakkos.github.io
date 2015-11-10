@@ -32,7 +32,8 @@ service that I use it against. Because the less secure service that I'm using
 will be attacked and the attacker will get his hands on my plain text password.
 Of course my stolen password is not reused anywhere, thanks to the use of the service tag.
 However the service tag must be considered common knowledge, which means that the attacker
-will brute force the passphrase and if my passphrase is weak, he will find it in reasonable time.
+(let's assume that he knows how I compute my passwords) will brute force the passphrase
+and if my passphrase is weak, he will find it in reasonable time.
 Let's see if we can fix that by adding in the computation what all the service
 providers should be doing in their systems in order to protect my password.
 
