@@ -50,7 +50,7 @@ password = hash(passphrase + serviceTag + salt)
 </pre>
 
 Also, let's slow down the attacker by
-<a href="https://en.wikipedia.org/wiki/Key_stretching" target="blank">key stretching</a>
+<a href="https://en.wikipedia.org/wiki/Key_stretching" target="blank">stretching</a>
 the computed password.
 
 <pre style="text-align: left">
