@@ -1,29 +1,88 @@
 ---
 layout: post
 section-type: post
-title: One password to rule them all? (pt 2)
+title: One passwords
 category: tech
 tags: [ 'opensource', 'cypherpunk', 'bitcoin' ]
 ---
 
 <small>*Longer than usual post is following*</small>
 
-This is the second iteration of creating a stateless password manager.
-Stateless is valuable because it eliminates the need to download special software, or create accounts.
-The realization of a stateless password manager could be ass simple as a web app.
-Another important aspect is open-source, given that this can build the trust of the
-(hopefully!) reluctant users.
+This is the second <a href="https://panossakkos.github.io/tech/2015/11/01/one-passwords.html"
+target="blank">iteration</a> of creating a stateless password manager.
+The stateless property is valuable because it eliminates the need to install software, or create accounts.
+Moreover, there is nothing that an attacker can steal, everything is plain computations using a secret key, the user's passphrase.
+A realization of a stateless password manager could be as simple as a client-only web app.
+That way you can build trust with the users, because they can read the javascript
+code that it's being executed on their machine.
 
-The first iteration was using a combination of a secret passphrase and a service name
-as user's input. These two were hashed and then mapped to a block of Bitcoin's Block chain.
-Finally this block's hash was the returned password.
+The first iteration was using a combination of a passphrase and a service tag
+as user's input. These two were hashed and mapped to a block of Bitcoin's Block chain.
+The mapped block's hash was hashed and the result was the password.
+Next morning, as soon as I woke up, I realized that there was no reason to use the Block
+chain. You can simply hash the two inputs.
 
-Next morning, (as soon as I woke up!) I realized that this was <strike>stupid</strike> naive.
-
-There was no reason to use the Block chain at all, you can just hash the two inputs!
 So, this is what we have right now
 
+<pre style="text-align: left">
+password = hash(passphrase + serviceTag)
+</pre>
 
-````
-hash(secretPassphrase + serviceName)
-````
+Let's assume that I start using this technique for every service that I need to authenticate against.
+In an ideal world all these services are protecting my passwords by not storing them
+as plaintext and by gating the login attempts. This ideal world is not even close to
+what is happening today and my password computation technique is as weak as the less secure
+service that I use it against. Because the less secure service that I'm using
+will be attacked and the attacker will get his hands on my plain text password.
+Of course my stolen password is not reused anywhere, thanks to the use of the service tag,
+but given that the service tag must be considered common knowledge,
+then the attacker will brute force the passphrase and manage to find the passphrase,
+depending on how weak the passphrase is.
+Let's see if we can fix that by adding in the computation what all the service
+providers should be doing in their systems in order to protect my password.
+
+The common and effective approach against the <a
+href="https://en.wikipedia.org/wiki/Rainbow_table#Defense_against_rainbow_tables"
+target="blank">rainbow table attacks</a> (which are used to brute force hashed passwords)
+is to use a <a href="https://en.wikipedia.org/wiki/Salt_(cryptography)" target="blank">salt</a>.
+You can imagine a salt as a very strong password that it's appended to the user's password and then hashed.
+This breaks the precomputed tables because the attacker has to recompute them for each possible salt value.
+We can easily pick this salt from the Block chain, in order to maintain our stateless property.
+
+<pre style="text-align: left">
+salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight]
+password = hash(passphrase + serviceTag + salt)
+</pre>
+
+Also, let's slow down the attacker by
+<a href="https://en.wikipedia.org/wiki/Key_stretching" target="blank">key stretching</a>
+the computed password.
+
+<pre style="text-align: left">
+salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight]
+password = hash(passphrase + serviceTag + salt)
+
+for i = 0, i < keyStretchingIterations, i++
+  password = hash(password)
+</pre>
+
+Here is the source for SHA256 as the cryptographic hash, 382777 possible salt values and 65000 iterations of stretching:
+
+<script src="https://gist.github.com/PanosSakkos/bf03030a3ccff8d9c100.js"></script>
+
+Results *for_an_1m4Gin4ry* secret passphrase:
+
+<pre style="text-align: left">
+Service Name:  gmail
+Password:  78b8e2c01f26c91f6281876772b289ccb8c7ae644f5b2bb195cef27d06459b44
+Service Name:  facebook
+Password:  806b939f8707e431612c40649fa1de8538408fc7d490488e81c06321828141e6
+Service Name:  github
+Password:  8d8aa6e37da2a3fafb20e937af638bf8386cfdad949be3fa3fa1729e823dc010
+</pre>
+
+If you are interested in dogfooding
+<a href="https://panossakkos.github.io/one-passwords/"> target="blank">it</a> or
+if you have any suggestions, feel free to join the gitter channel.
+
+[![Join the chat at https://gitter.im/PanosSakkos/one-passwords](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/one-passwords?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
