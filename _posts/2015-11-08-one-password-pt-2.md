@@ -11,14 +11,15 @@ tags: [ 'opensource', 'cypherpunk', 'bitcoin' ]
 This is the second <a href="https://panossakkos.github.io/tech/2015/11/01/one-passwords.html"
 target="blank">iteration</a> of creating a stateless password manager.
 The stateless property is valuable because it eliminates the need to install software, or create accounts.
-Moreover, there is nothing that an attacker can steal, everything is plain computations using a secret key, the user's passphrase.
+Moreover, there is nothing that an attacker can steal, everything is plain
+computations using a secret key, the user's passphrase.
 A realization of a stateless password manager could be as simple as a client-only web app.
 That way you can build trust with the users, because they can read the javascript
 code that it's being executed on their machine.
 
 The first iteration was using a combination of a passphrase and a service tag
 as user's input. These two were hashed and mapped to a block of Bitcoin's Block chain.
-The mapped block's hash was hashed and the result was the password.
+The mapped block's hash was hashed and the digest was the password.
 Next morning, as soon as I woke up, I realized that there was no reason to use the Block
 chain. You can simply hash the two inputs.
 
