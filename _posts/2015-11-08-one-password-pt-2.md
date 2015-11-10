@@ -77,7 +77,7 @@ Password:  8d8aa6e37da2a3fafb20e937af638bf8386cfdad949be3fa3fa1729e823dc010
 </pre>
 
 If you are interested in dogfooding
-<a href="https://panossakkos.github.io/one-passwords/"> target="blank">it</a> or
+<a href="https://panossakkos.github.io/one-passwords/" target="blank">it</a> or
 if you have any suggestions, feel free to join the gitter channel.
 
 [![Join the chat at https://gitter.im/PanosSakkos/one-passwords](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/one-passwords?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
