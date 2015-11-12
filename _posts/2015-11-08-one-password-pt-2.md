@@ -46,7 +46,7 @@ This breaks the precomputed tables because the attacker has to recompute them fo
 We can easily pick this salt from the Block chain, in order to maintain our stateless property.
 
 <pre style="text-align: left">
-salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight]
+salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight].hash
 password = hash(passphrase + serviceTag + salt)
 </pre>
 
@@ -55,7 +55,7 @@ Also, let's slow down the attacker by
 the computed password.
 
 <pre style="text-align: left">
-salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight]
+salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight].hash
 password = hash(passphrase + serviceTag + salt)
 
 for i = 0, i < keyStretchingIterations, i++
