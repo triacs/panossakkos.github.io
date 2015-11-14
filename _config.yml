@@ -6,6 +6,12 @@ baseurl: ""
 google-tracking-id: "UA-35880426-3"
 force-https: True
 
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
+
 #############
 # HTML Head #
 #############
@@ -112,16 +118,6 @@ social:
 ################################################################################
 
 # Tread carefully if you want to change the variables bellow this point!
-
-# Navigation bar links
-# Blog link in the blog and post pages will point to the blog.html#blog
-# In the default page it will point to the preview of the last post
-
-pages_list:
-  About: 'about'
-  Blog: 'blog'
-  Career: 'career'
-  Contact: 'contact'
 
 # Pagination path
 paginate_path: "blog/page:num"
