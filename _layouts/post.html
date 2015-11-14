@@ -8,6 +8,15 @@
 
   <body>
 
+    <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
+
+    <script>
+    var hammertime = new Hammer(myElement, myOptions);
+      hammertime.on('swipe', function(ev) {
+        window.alert('Hello world of swipping! :)');
+      });
+    </script>
+
     {% include navigation.html %}
 
     <section class="container content-section text-center">
