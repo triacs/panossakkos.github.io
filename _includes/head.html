@@ -54,13 +54,14 @@
 
   {% endif %}
 
-  {% if page.section-type == "post" %}
+  {% if site.syntax-highlight and page.section-type == "post"%}
 
-    <!-- Code highlighting in Post pages -->
+    <!-- Syntax highlight in post pages -->
 
-    <link href="{{site.baseurl}}/css/syntax.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
   {% endif %}
+
 </head>
 
 <!-- HEAD End -->

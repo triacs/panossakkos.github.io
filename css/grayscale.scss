@@ -224,6 +224,7 @@ a {
         display: block;
         max-width: 100%;
         height: auto;
+        margin: 0 auto;
     }
     /* Added in { Personal } */
     ul,
@@ -314,3 +315,5 @@ body {
     100% { opacity:1; }
 }
 /* END Added in { Personal } for Typed Cursor in Header */
+
+code { text-align: left; }
