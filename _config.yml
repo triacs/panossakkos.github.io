@@ -6,11 +6,25 @@ baseurl: ""
 google-tracking-id: "UA-35880426-3"
 force-https: True
 
+syntax-highlight: True
+
+# Sections shown in the index page
+
 pages_list:
   About: 'about'
   Blog: 'latest-post'
   Timeline: 'timeline'
   Contact: 'contact'
+
+web-app-mode: True
+
+# Icons for Chrome Web App mode https://developer.chrome.com/multidevice/android/installtohomescreen
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
 
 #############
 # HTML Head #
