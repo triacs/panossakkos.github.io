@@ -45,4 +45,6 @@ git push origin master:master
 
 😊
 
+Emoji test: I give a :+1: and a :smile:!
+
 Edit: I tend to [keep](https://panossakkos.github.io/tech/2015/07/05/personal-jekyll-theme.html) my promises
