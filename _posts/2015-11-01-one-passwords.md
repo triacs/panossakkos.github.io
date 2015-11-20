@@ -36,7 +36,30 @@ SHA256(passphrase + serviceTag) modulo 381323
 
 The javascript code to do that was less than 20 lines of code
 
-<script src="https://gist.github.com/PanosSakkos/363e2fbc98e0fd4eafd3.js"></script>
+<pre><code data-trim class="javascript">
+function getBlockchainPassword(passphrase, serviceName) {
+  // Highest prime number available in the Bitcoin blockchain to use as the modulo
+  var primeBlock = 381323;
+
+  // No (security) need to make the user remember case sensitive service names
+  serviceName = serviceName.toLowerCase();
+
+  var block = parseInt('0x' + passphrase + serviceName) % primeBlock;
+
+  var xhttp = new XMLHttpRequest();
+  var url = 'https://bitcoin.toshi.io/api/v0/blocks/' + block;
+
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var block = JSON.parse(xhttp.responseText);
+      document.getElementById('password').value = sha256(block.hash);
+    }
+  }
+
+  xhttp.open('GET', url, true);
+  xhttp.send();
+}
+</code></pre>
 
 I started using it and I realized that I had created a password manager without actually storing any data.
 Also the Block chain cannot be altered, when a block is checkpointed, it's checkpointed for an eternity, thanks to the nodes of the Bitcoin network.
