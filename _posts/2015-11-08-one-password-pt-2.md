@@ -66,6 +66,43 @@ Here is the source for SHA256 as the cryptographic hash, 382777 possible salt va
 
 <script src="https://gist.github.com/PanosSakkos/bf03030a3ccff8d9c100.js"></script>
 
+<pre><code data-trim class="javascript">
+// Highest prime number available in the Bitcoin blockchain to use as the modulo
+// for the block mapping that its hash will serve as the salt.
+var PrimeBlock = 382777;
+
+var StretchingIterations = 65000;
+
+function computePassword(passphrase, serviceTag) {
+
+  // No (security) need to make the user remember case sensitive service names
+  serviceTag = serviceTag.toLowerCase();
+
+  var saltBlock = parseInt('0x' + sha256(passphrase + serviceTag)) % PrimeBlock;
+
+  var xhttp = new XMLHttpRequest();
+  var url = 'https://bitcoin.toshi.io/api/v0/blocks/' + saltBlock;
+
+  xhttp.onreadystatechange = function() {
+
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+
+      var salt = JSON.parse(xhttp.responseText).hash;
+      var password = sha256(passphrase + serviceTag + salt);
+
+      for (i = 0; i < StretchingIterations; i++) {
+          password = sha256(password);
+      }
+
+      document.getElementById('password').value = password;
+    }
+  }
+
+  xhttp.open('GET', url, true);
+  xhttp.send();
+}
+</code></pre>
+
 Results *for_an_1m4Gin4ry* secret passphrase:
 
 <pre><code data-trim class="xml">
