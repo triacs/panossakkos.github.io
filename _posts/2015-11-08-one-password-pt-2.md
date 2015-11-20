@@ -20,9 +20,9 @@ The mapped block's hash was hashed and the digest was the password.
 I quickly realized that there was no reason to use the Block
 chain. You can simply hash the two inputs.
 
-<pre style="text-align: left">
+<pre><code data-trim class="javascript">
 password = hash(passphrase + serviceTag)
-</pre>
+</code></pre>
 
 Let's assume that I start using this technique for every service that I need to authenticate against.
 In an ideal world all these services are protecting my passwords by not storing them
@@ -45,22 +45,22 @@ You can imagine a salt as a very strong password that it's appended to the user'
 This breaks the precomputed tables because the attacker has to recompute them for each possible salt value.
 We can easily pick this salt from the Block chain, in order to maintain our stateless property.
 
-<pre style="text-align: left">
+<pre><code data-trim class="javascript">
 salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight].hash
 password = hash(passphrase + serviceTag + salt)
-</pre>
+</code></pre>
 
 Also, let's slow down the attacker by
 <a href="https://en.wikipedia.org/wiki/Key_stretching" target="blank">stretching</a>
 the computed password.
 
-<pre style="text-align: left">
+<pre><code data-trim class="javascript">
 salt = blockChain[hash(passphrase + serviceTag) modulo bigPrimeBlockHeight].hash
 password = hash(passphrase + serviceTag + salt)
 
 for i = 0, i < keyStretchingIterations, i++
   password = hash(password)
-</pre>
+</code></pre>
 
 Here is the source for SHA256 as the cryptographic hash, 382777 possible salt values and 65000 iterations of stretching:
 
@@ -68,14 +68,14 @@ Here is the source for SHA256 as the cryptographic hash, 382777 possible salt va
 
 Results *for_an_1m4Gin4ry* secret passphrase:
 
-<pre style="text-align: left">
+<pre><code data-trim class="xml">
 Service Name:  gmail
 Password:  78b8e2c01f26c91f6281876772b289ccb8c7ae644f5b2bb195cef27d06459b44
 Service Name:  facebook
 Password:  806b939f8707e431612c40649fa1de8538408fc7d490488e81c06321828141e6
 Service Name:  github
 Password:  8d8aa6e37da2a3fafb20e937af638bf8386cfdad949be3fa3fa1729e823dc010
-</pre>
+</code></pre>
 
 If you are interested in dogfooding
 <a href="https://panossakkos.github.io/one-passwords/" target="blank">it</a> or

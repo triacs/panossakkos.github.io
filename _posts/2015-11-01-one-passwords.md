@@ -30,9 +30,9 @@ so it's actually a very <a href="https://xkcd.com/936/" target="blank">strong</a
 
 I created a proof of concept web app that was using the following, in order to point to a block:
 
-<pre style="text-align: left">
+<pre><code data-trim class="javascript">
 SHA256(passphrase + serviceTag) modulo 381323
-</pre>
+</code></pre>
 
 The javascript code to do that was less than 20 lines of code
 
@@ -43,13 +43,13 @@ Also the Block chain cannot be altered, when a block is checkpointed, it's check
 
 Results *for_an_1m4Gin4ry* secret passphrase
 
-<pre style="text-align: left">
-Service Tag:  gmail
+<pre><code data-trim class="xml">
+Service Tag: gmail
 Password:  61626e0726ff0ab201c97bfda68b8343bf7dbebad9365117f6da73c56b8b6241
 Service Tag:  facebook
 Password:  26fdff60be55a5934de2b56093dd9cc61bfd88c84f0bb0c80df5413f9a6c360b
 Service Tag:  github
 Password:  c4f8bc9fb5aea9d8d323d4e97b30e853a0ce531696527f75be72a7de66be4c9f
-</pre>
+</code></pre>
 
 P.S: There is a follow up [post](https://panossakkos.github.io/tech/2015/11/08/one-password-pt-2.html) on this

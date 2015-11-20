@@ -52,24 +52,24 @@ Summarizing,
 
 ###Photos
 
-<img src="/img/posts/printer/misc.jpg" alt="parts">
+![misc](/img/posts/printer/misc.jpg)
 
-<img src="/img/posts/printer/session-1-0.jpg" alt="">
+![sesion0](/img/posts/printer/session-1-0.jpg)
 
-<img src="/img/posts/printer/session-1-1.jpg" alt="">
+![session1](/img/posts/printer/session-1-1.jpg)
 
-<img src="/img/posts/printer/first-bug.jpg" alt="Fixing the first bug">
+![session2](/img/posts/printer/first-bug.jpg)
 
-<img src="/img/posts/printer/board-fix.jpg" alt="Board fix">
+![session3](/img/posts/printer/board-fix.jpg)
 
-<img src="/img/posts/printer/board.jpg" alt="control board">
+![session4](/img/posts/printer/board.jpg)
 
-<img src="/img/posts/printer/session-1-2.jpg" alt="">
+![session5](/img/posts/printer/session-1-2.jpg)
 
-<img src="/img/posts/printer/session-1-3.jpg" alt="">
+![session6](/img/posts/printer/session-1-3.jpg)
 
-<img src="/img/posts/printer/session-1-4.jpg" alt="">
+![session7](/img/posts/printer/session-1-4.jpg)
 
-<img src="/img/posts/printer/session-1-complete.jpg" alt="complete">
+![session8](/img/posts/printer/session-1-complete.jpg)
 
-<img src="/img/posts/printer/print.jpg" alt="first print">
+![session9](/img/posts/printer/print.jpg)

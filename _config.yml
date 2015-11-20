@@ -70,10 +70,11 @@ paginate: 5
 fb-share: True
 twitter-share: True
 reddit-share: True
-google-plus-share: False
-linkedin-share: False
+linkedin-share: True
 pinterest-share: False
+google-plus-share: True
 vkontakte-share: False
+
 disqus-shortname: "panossakkos"
 
 ###############

@@ -23,10 +23,10 @@ First of all, you will need <a href="https://www.torproject.org/docs/installguid
 Then you have to declare the path where you want to place your service's private and public keys
 and its listening port in the torrc configuration file:
 
-<pre style="text-align: left">
+<pre><code data-trim class="bash">
 HiddenServiceDir /home/username/hidden-service/
 HiddenServicePort 80 127.0.0.1:4000
-</pre>
+</code></pre>
 
 Restart the tor service and you will find your service's onion address (public key) in HiddenServiceDir/hostname.
 

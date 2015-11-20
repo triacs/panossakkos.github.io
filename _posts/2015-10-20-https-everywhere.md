@@ -23,26 +23,26 @@ How can you contribute?
 While browsing with *HTTPS Everywhere* enabled, if you see a website that is not on https, try to access it with https. If the website is still functional, then you can very easily add a rule for it. Fork the Github
 <a href="https://github.com/EFForg/https-everywhere" target="blank"> repo</a> and
 
-<pre style="text-align: left">
+<pre><code data-trim class="bash">
 cd src/chrome/content/rules
 ./make-trivial-rule &lt;the domain you want to add&gt;
-</pre>
+</code></pre>
 
 And the default rule set file will be created. For example the trivial rule for
 
-<pre style="text-align: left">
+<pre><code data-trim class="bash">
 ./make-trivial-rule di.uoa.gr
-</pre>
+</code></pre>
 
 will look like this
 
-<pre style="text-align: left">
+<pre><code data-trim class="xml">
 &lt;ruleset name="National and Kapodistrian University of Athens - Department of Informatics and Telecommunications"&gt;
   &lt;target host="di.uoa.gr" /&gt;
   &lt;target host="www.di.uoa.gr" /&gt;
   &lt;rule from="^http:" to="https:" /&gt;
 &lt;/ruleset&gt;
-</pre>
+</code></pre>
 
 Open a pull request and that's it!
 A very quick way to have quite some impact on protecting the privacy and the security of the many 😉
