@@ -64,8 +64,6 @@ for i = 0, i < keyStretchingIterations, i++
 
 Here is the source for SHA256 as the cryptographic hash, 382777 possible salt values and 65000 iterations of stretching:
 
-<script src="https://gist.github.com/PanosSakkos/bf03030a3ccff8d9c100.js"></script>
-
 <pre><code data-trim class="javascript">
 // Highest prime number available in the Bitcoin blockchain to use as the modulo
 // for the block mapping that its hash will serve as the salt.
