@@ -42,8 +42,8 @@ keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, Uo
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/intro-bg.jpg"
-me-img: "/img/me.jpg"
+background-img: "../img/intro-bg.png"
+me-img: "/img/me.png"
 
 ##############################
 # Dynamic Text on the header #
@@ -82,27 +82,27 @@ disqus-shortname: "panossakkos"
 ###############
 
 events:
-  - image: "/img/career/microsoft.jpg"
+  - image: "/img/career/microsoft.png"
     date: "September 2014 - Today"
     description: "Software Engineer @ Microsoft Development Center Norway, working @ the <a href=\"https://graph.microsoft.io\" target=\"_blank\"> Office Graph</a>"
-  - image: "/img/career/microsoft.jpg"
+  - image: "/img/career/microsoft.png"
     date: "June 2013 - September 2013"
     description: "Software Engineering Intern @ Microsoft Development Center Norway, worked @ the <a href=\"https://graph.microsoft.io\" target=\"_blank\"> Office Graph</a>"
-  - image: "/img/career/uoa.jpg"
+  - image: "/img/career/uoa.png"
     date: "October 2012 - August 2014"
     description: "Master studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Software Engineering + <a href=\"https://scholar.google.com/citations?user=UtV6LFYAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\">Machine Learning researcher</a> @ <a href=\"http://kddlab.di.uoa.gr\" target=\"_blank\">KDD</a> lab"
-  - image: "/img/career/cern.jpg"
+  - image: "/img/career/cern.png"
     date: "October 2011 - September 2012"
     description: "Security researcher @ <a href=\"https://www.cern.ch\" target=\"_blank\">CERN</a>, developed linux kernel extensions to prevent cyber attacks"
-  - image: "/img/career/pwnmail.jpg"
+  - image: "/img/career/pwnmail.png"
     date: "June 2010 - November 2010"
     description: "Created <a href=\"https://www.google.com/search?q=pwn+mail\" target=\"_blank\">Pwn Mail</a>, a Cydia iPhone app for spoofing emails. It served &gt; 260,000 emails but it was discontinued after a legal threat by Steve Jobs"
-  - image: "/img/career/uoa.jpg"
+  - image: "/img/career/uoa.png"
     date: "October 2007 - September 2011"
     description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
 
 # First image of the Career timeline
-career-img: "/img/career/default.jpg"
+career-img: "/img/career/default.png"
 
 ##################
 # Contact layout #
