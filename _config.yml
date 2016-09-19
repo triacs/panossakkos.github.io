@@ -10,10 +10,10 @@ syntax-highlight: True
 # Sections shown in the index page
 
 pages_list:
-  J: 'about'
+  О нас: 'about'
   Blog: 'latest-post'
   Timeline: 'timeline'
-  Contact: 'contact'
+  Контакты: 'contact'
 
 web-app-mode: True
 
@@ -29,10 +29,10 @@ icon-192p: "/img/web-app/icon-192p.png"
 # HTML Head #
 #############
 
-author: "Panos Sakkos"
-lang: "en"
-title: "{ Panos Sakkos }"
-short-title: "{ Panos }"
+author: "Триакс"
+lang: "ru"
+title: "Триакс"
+short-title: "Триакс"
 favicon: "/img/black-lock.png"
 description: "Blog of Panos Sakkos, blogging mainly about tech. Opinions expressed are mine."
 keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft, Office Graph, Machine Learning, Databases, jekyll"
@@ -49,7 +49,7 @@ me-img: "/img/me.jpg"
 # Color the browser elements #
 ##############################
 color-browser: "#000000"
-apple-status-bar-style: "black"
+apple-status-bar-style: "white"
 
 ##############################
 # Dynamic Text on the header #
@@ -63,7 +63,7 @@ type-speed: 4 # Default 10
 start-delay: 2000 # Default 200
 delete-delay: 50000 # Default 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Protect what you love"
+  - text: "Мы станем полезны вашему бизнесу!"
 
 ########
 # Blog #
@@ -86,7 +86,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: ""
 
 ###############
 # Life Events #
@@ -119,7 +119,7 @@ timeline-img: "/img/career/default.jpg"
 # Contact layout #
 ##################
 
-email: "panos.sakkos@gmail.com"
+email: "info@triacs.ru"
 
 ################
 # Author Blurb #
