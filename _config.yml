@@ -10,10 +10,10 @@ syntax-highlight: True
 # Sections shown in the index page
 
 pages_list:
-  About: 'О Нас'
+  About: 'About'
   Blog: 'latest-post'
   Timeline: 'timeline'
-  Contact: 'Контакты'
+  Contact: 'Contact'
 
 web-app-mode: True
 
