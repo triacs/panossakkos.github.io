@@ -1,7 +1,7 @@
 
 # Site settings
 
-url: "https://panossakkos.github.io"
+url: "https://triacs.github.io"
 baseurl: ""
 force-https: True
 
@@ -10,10 +10,10 @@ syntax-highlight: True
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
+  About: 'О Нас'
   Blog: 'latest-post'
   Timeline: 'timeline'
-  Contact: 'contact'
+  Contact: 'Контакты'
 
 web-app-mode: True
 
