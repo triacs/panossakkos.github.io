@@ -80,7 +80,7 @@ a {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba($font-color, 0.3);
+    border-bottom: 0px solid rgba($font-color, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: $navbar-sm-background-color;
@@ -150,7 +150,7 @@ a {
         &.top-nav-collapse {
             padding: 0;
             background: $navbar-lg-collapse-background-color;
-            border-bottom: 1px solid rgba($font-color, 0.3);
+            border-bottom: 0px solid rgba($font-color, 0.3);
         }
     }
 }
@@ -244,7 +244,7 @@ a {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-        border: 1px solid $font-color;
+        border: 0px solid $font-color;
     }
     /* Added in { Personal } */
     ul,
@@ -265,7 +265,7 @@ a {
       /* Override any img styles to ensure Emojis are displayed inline */
       margin: 0px !important;
       display: inline !important;
-      border: 1px solid $primary-color !important;
+      border: 0px solid $primary-color !important;
     }
 
     /* Added in { Personal } */
@@ -288,14 +288,14 @@ a {
 }
 
 .btn-default {
-    border: 1px solid $secondary-color;
+    border: 0px solid $secondary-color;
     color: $secondary-color;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid $secondary-color;
+    border: 0px solid $secondary-color;
     outline: 0;
     color: #000;
     background-color: $secondary-color;
@@ -443,5 +443,5 @@ body {
  /* END Style for swipe instruction section */
 
 .fourofour {
-  border: 1px solid $primary-color !important;
+  border: 0px solid $primary-color !important;
 }
