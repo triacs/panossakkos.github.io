@@ -129,20 +129,7 @@ email: "info@triacs.ru"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "<p style="text-align: justify;"><span style="font-size: 15px; line-height: 1.3em;">   ГК «Триакс» - компания, состоящая из профессионалов с многолетним опытом в сфере Информационных Технологий.  Специалисты нашей компании осуществляют ИТ поддержку как крупных клиентов, с распределенной структурой филиалов, так и небольших организаций, индивидуальных предпринимателей. Сервис и качество предоставляется одинаково на высоком уровне – это наша политика. В нашей компании нет специалистов широкого профиля -  для каждого вида задач мы предоставляем профильных специалистов. Основной вид деятельности нашей компании – это услуги и аутсорсинг. На рынке информационных технологий  являемся поставщиком комплексных решений для ИТ инфраструктуры компаний. Мы постоянно расширяем и развиваем портфель услуг для Заказчиков, и на сегодняшний день мы можем предложить Вам следующее:</span></p>
-<ul>
-<li><span style="font-size: 15px; line-height: 1.3em;">Администрирование сетей, серверного оборудования и ПО</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Абонентское обслуживание (с предоставлением подменного оборудования)</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Инфраструктурные решения</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Сети передачи данных</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Системы связи (Видеоконференцсвязь, телефония, беспроводной доступ)</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Кондиционирование</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Электроснабжение</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Поставка оборудования</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Аутсорсинг инфраструктуры печати</span></li>
-<li><span style="font-size: 15px; line-height: 1.3em;">Информационная поддержка клиентов</span></li>
-</ul>
-<p> <span style="font-size: 15px; line-height: 1.3em; text-align: justify;">Мы всегда будем рады сотрудничеству с Вами!</span></p>"
+author_blurb: "«Триакс» - группа компаний, состоящая из профессионалов с многолетним опытом в сфере Информационных Технологий."
 author_blurb_image: "/img/me.jpg"
 
 ##################
