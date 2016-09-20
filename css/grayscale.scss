@@ -80,7 +80,7 @@ a {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 0px solid rgba($font-color, 0.3);
+    border-bottom: 0px solid rgba($font-color, 0);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: $navbar-sm-background-color;
@@ -150,7 +150,7 @@ a {
         &.top-nav-collapse {
             padding: 0;
             background: $navbar-lg-collapse-background-color;
-            border-bottom: 0px solid rgba($font-color, 0.3);
+            border-bottom: 0px solid rgba($font-color, 0);
         }
     }
 }
