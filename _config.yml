@@ -11,8 +11,8 @@ syntax-highlight: True
 
 pages_list:
   О нас: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
+  #Blog: 'latest-post'
+  Что мы умеем: 'timeline'
   Контакты: 'contact'
 
 web-app-mode: True
