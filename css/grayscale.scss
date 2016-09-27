@@ -107,7 +107,7 @@ a {
     a {
         color: $navbar-color;
         @if $header-text-shadow{
-            text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0);
         }
     }
     .nav {
@@ -120,18 +120,18 @@ a {
                 &:hover {
                     /* color: rgba($font-color, 0.8); */
                     outline: none;
-                    background-color: rgba($font-color, 0.3);
+                    background-color: rgba($font-color, 0);
                 }
                 &:focus,
                 &:active {
                     outline: none;
-                      background-color: rgba($font-color, 0.3);
+                      background-color: rgba($font-color, 0);
                 }
             }
             &.active {
                 outline: none;
-                a {
-                    background-color: rgba($font-color, 0.3);
+              0.  a {
+                    background-color: rgba($font-color, 0);
                     &:hover {
                         color: $navbar-color;
                     }
