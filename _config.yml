@@ -42,13 +42,13 @@ keywords: "panos, sakkos, technology, computer science, Pwn Mail, WriteRight, Uo
 ################
 
 black-favicon: "/img/lock.png"
-background-img: "../img/opera.jpg"
-me-img: "/img/LOGO1.png"
+# background-img: "../img/opera.jpg"
+# me-img: "/img/LOGO1.png"
 
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#000000"
+color-browser: "#ffffff"
 apple-status-bar-style: "white"
 
 ##############################
