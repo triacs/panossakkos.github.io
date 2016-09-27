@@ -339,11 +339,11 @@ footer {
     background: rgba($font-color, 0.2);
 }
 
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba($font-color, 0.2);
-}
+# ::selection {
+ #   text-shadow: none;
+  #  background: #fcfcfc;
+  #  background: rgba($font-color, 0.2);
+#}
 
 img::selection {
     background: transparent;
